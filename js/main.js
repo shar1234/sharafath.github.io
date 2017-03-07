@@ -229,6 +229,8 @@
 		      type: "POST",
 		      url: "https://script.google.com/macros/s/AKfycbxh_Z-Em05pcL8RrL1kHcTelM_pvLJ9FW4CoPWvSSbe5cIIxbzU/exec",
 		      data: $(form).serialize(),
+					crossDomain: true,
+					dataType: "text",
 		      beforeSend: function() {
 
 		      	sLoader.fadeIn();
